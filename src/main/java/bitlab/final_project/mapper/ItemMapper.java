@@ -1,6 +1,7 @@
 package bitlab.final_project.mapper;
 
 import bitlab.final_project.dto.ItemCreate;
+import bitlab.final_project.dto.ItemEdit;
 import bitlab.final_project.dto.ItemView;
 import bitlab.final_project.entity.Item;
 import org.mapstruct.Mapper;
@@ -14,4 +15,7 @@ public interface ItemMapper {
     ItemView toView(Item item);
     List<ItemView> toView(List<Item> items);
     Item toEntity(ItemCreate itemCreate);
+    Item toEntity(ItemEdit itemEdit);
+
+    void updateItemFromDto(ItemEdit itemEdit, Item item);
 }

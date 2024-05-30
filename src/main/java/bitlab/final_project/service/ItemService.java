@@ -1,6 +1,7 @@
 package bitlab.final_project.service;
 
 import bitlab.final_project.dto.ItemCreate;
+import bitlab.final_project.dto.ItemEdit;
 import bitlab.final_project.dto.ItemView;
 import bitlab.final_project.entity.Item;
 import bitlab.final_project.mapper.ItemMapper;
@@ -9,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -25,14 +27,28 @@ public class ItemService {
         return ItemMapper.INSTANCE.toView(items);
     }
 
-    public Item createItem(ItemCreate itemCreate) {
+    public ItemView createItem(ItemCreate itemCreate) {
+        Optional<Item> optionalItem = itemRepository.findByName(itemCreate.getName());
+        if (optionalItem.isPresent()) {
+            throw new RuntimeException("Этот товар уже существует!");
+        }
         Item item = ItemMapper.INSTANCE.toEntity(itemCreate);
-        return itemRepository.save(item);
+        Item savedItem = itemRepository.save(item);
+        return ItemMapper.INSTANCE.toView(savedItem);
     }
 
 
-    public Item editItem(Item item) {
-        return itemRepository.save(item);
+    public ItemView editItem(ItemEdit itemEdit) {
+        Optional<Item> optionalItem = itemRepository.findById(itemEdit.getId());
+
+        if (optionalItem.isPresent()) {
+            Item item = optionalItem.get();
+            ItemMapper.INSTANCE.updateItemFromDto(itemEdit, item);
+            Item updatedItem = itemRepository.save(item);
+            return ItemMapper.INSTANCE.toView(updatedItem);
+        } else {
+            throw new RuntimeException("Товар не найден, ID: " + itemEdit.getId());
+        }
     }
 
     public void deleteById(Long id) {

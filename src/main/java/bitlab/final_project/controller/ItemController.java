@@ -1,6 +1,7 @@
 package bitlab.final_project.controller;
 
 import bitlab.final_project.dto.ItemCreate;
+import bitlab.final_project.dto.ItemEdit;
 import bitlab.final_project.dto.ItemView;
 import bitlab.final_project.entity.Item;
 import bitlab.final_project.service.ItemService;
@@ -27,13 +28,13 @@ public class ItemController {
     }
 
     @PostMapping
-    public Item createItem(@RequestBody ItemCreate itemCreate) {
+    public ItemView createItem(@RequestBody ItemCreate itemCreate) {
         return itemService.createItem(itemCreate);
     }
 
     @PutMapping
-    public Item editItem(@RequestBody Item item) {
-        return itemService.editItem(item);
+    public ItemView editItem(@RequestBody ItemEdit itemEdit) {
+        return itemService.editItem(itemEdit);
     }
 
     @DeleteMapping("{id}")
