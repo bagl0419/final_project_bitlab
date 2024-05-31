@@ -5,6 +5,7 @@ import bitlab.final_project.dto.ItemEdit;
 import bitlab.final_project.dto.ItemView;
 import bitlab.final_project.entity.Item;
 import org.mapstruct.Mapper;
+import org.mapstruct.MappingTarget;
 import org.mapstruct.factory.Mappers;
 
 import java.util.List;
@@ -17,5 +18,5 @@ public interface ItemMapper {
     Item toEntity(ItemCreate itemCreate);
     Item toEntity(ItemEdit itemEdit);
 
-    void updateItemFromDto(ItemEdit itemEdit, Item item);
+    void updateItemFromDto(ItemEdit itemEdit, @MappingTarget Item item);
 }
