@@ -1,6 +1,4 @@
 package bitlab.final_project.service;
-import java.util.Collections;
-import java.util.Optional;
 
 import bitlab.final_project.entity.Role;
 import bitlab.final_project.entity.User;
@@ -12,6 +10,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Collections;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

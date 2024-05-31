@@ -16,7 +16,6 @@ public interface ItemMapper {
     ItemView toView(Item item);
     List<ItemView> toView(List<Item> items);
     Item toEntity(ItemCreate itemCreate);
-    Item toEntity(ItemEdit itemEdit);
 
     void updateItemFromDto(ItemEdit itemEdit, @MappingTarget Item item);
 }

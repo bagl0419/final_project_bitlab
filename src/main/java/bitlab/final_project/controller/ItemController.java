@@ -3,7 +3,6 @@ package bitlab.final_project.controller;
 import bitlab.final_project.dto.ItemCreate;
 import bitlab.final_project.dto.ItemEdit;
 import bitlab.final_project.dto.ItemView;
-import bitlab.final_project.entity.Item;
 import bitlab.final_project.service.ItemService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
