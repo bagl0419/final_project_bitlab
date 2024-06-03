@@ -30,14 +30,16 @@ public class User implements UserDetails {
     @Column(name = "PASSWORD")
     private String password;
 
-    @Column(name = "EMAIL")
-    private String email;
-
     @ManyToOne
     @JoinColumn(name = "COUNTRY_ID")
     private Country country;
 
     @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "USER_ROLES",
+            joinColumns = @JoinColumn(name = "USER_ID"),
+            inverseJoinColumns = @JoinColumn(name = "ROLE_ID")
+    )
     private List<Role> roles;
 
     @Override

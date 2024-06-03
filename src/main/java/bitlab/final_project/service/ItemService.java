@@ -47,7 +47,7 @@ public class ItemService {
             Item updatedItem = itemRepository.save(item);
             return ItemMapper.INSTANCE.toView(updatedItem);
         } else {
-            throw new RuntimeException("Товар не найден, ID: " + itemEdit.getId());
+            throw new RuntimeException("Товар с ID: " + itemEdit.getId() + " не найден!");
         }
     }
 

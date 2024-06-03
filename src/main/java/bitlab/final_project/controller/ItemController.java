@@ -17,12 +17,12 @@ public class ItemController {
     private final ItemService itemService;
 
     @GetMapping("{id}")
-    public ItemView getItem(@PathVariable Long id) {
+    public ItemView getItemById(@PathVariable Long id) {
         return itemService.getItemById(id);
     }
 
     @GetMapping
-    public List<ItemView> getItems() {
+    public List<ItemView> getAllItems() {
         return itemService.getAllItems();
     }
 

@@ -1,6 +1,5 @@
 package bitlab.final_project.controller;
 
-import bitlab.final_project.entity.User;
 import bitlab.final_project.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
