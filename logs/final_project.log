@@ -1,0 +1,452 @@
+2024-06-03T14:02:15.375+05:00  INFO 6024 --- [main] b.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 17.0.10 with PID 6024 (C:\Baglan\Java Spring\final_project\build\classes\java\main started by bagl0 in C:\Baglan\Java Spring\final_project)
+2024-06-03T14:02:15.377+05:00  INFO 6024 --- [main] b.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-03T14:02:15.941+05:00  INFO 6024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03T14:02:15.998+05:00  INFO 6024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2024-06-03T14:02:16.461+05:00  INFO 6024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-03T14:02:16.471+05:00  INFO 6024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-03T14:02:16.471+05:00  INFO 6024 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03T14:02:16.521+05:00  INFO 6024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-03T14:02:16.521+05:00  INFO 6024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1111 ms
+2024-06-03T14:02:16.639+05:00  INFO 6024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-03T14:02:16.786+05:00  INFO 6024 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@463afa6e
+2024-06-03T14:02:16.787+05:00  INFO 6024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-03T14:02:16.904+05:00  INFO 6024 --- [main] liquibase.database                       : Set default schema name to rest
+2024-06-03T14:02:17.331+05:00  INFO 6024 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:02:17.354+05:00  INFO 6024 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-06-03T14:02:17.355+05:00  INFO 6024 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:02:17.361+05:00  INFO 6024 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-06-03T14:02:17.361+05:00  INFO 6024 --- [main] liquibase.util                           : Run:                          0
+2024-06-03T14:02:17.361+05:00  INFO 6024 --- [main] liquibase.util                           : Previously run:               2
+2024-06-03T14:02:17.361+05:00  INFO 6024 --- [main] liquibase.util                           : Filtered out:                 0
+2024-06-03T14:02:17.361+05:00  INFO 6024 --- [main] liquibase.util                           : -------------------------------
+2024-06-03T14:02:17.361+05:00  INFO 6024 --- [main] liquibase.util                           : Total change sets:            2
+2024-06-03T14:02:17.361+05:00  INFO 6024 --- [main] liquibase.util                           : Update summary generated
+2024-06-03T14:02:17.380+05:00  INFO 6024 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-06-03T14:02:17.382+05:00  INFO 6024 --- [main] liquibase.command                        : Command execution complete
+2024-06-03T14:02:17.452+05:00  INFO 6024 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-03T14:02:17.519+05:00  INFO 6024 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-03T14:02:17.558+05:00  INFO 6024 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-03T14:02:17.844+05:00  INFO 6024 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-03T14:02:18.674+05:00  INFO 6024 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-03T14:02:18.677+05:00  INFO 6024 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:02:18.940+05:00  INFO 6024 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-03T14:02:19.240+05:00  WARN 6024 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-03T14:02:19.258+05:00  INFO 6024 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-03T14:02:19.490+05:00  INFO 6024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64f3f849, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3abe1c9e, org.springframework.security.web.context.SecurityContextHolderFilter@143abb21, org.springframework.security.web.header.HeaderWriterFilter@6225c800, org.springframework.web.filter.CorsFilter@71586f, org.springframework.security.web.authentication.logout.LogoutFilter@2505480a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e791e53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b1e72a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c74025e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15d41953, org.springframework.security.web.access.ExceptionTranslationFilter@252da8f]
+2024-06-03T14:02:19.715+05:00  INFO 6024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-03T14:02:19.722+05:00  INFO 6024 --- [main] b.final_project.FinalProjectApplication  : Started FinalProjectApplication in 4.728 seconds (process running for 5.414)
+2024-06-03T14:02:26.924+05:00  INFO 6024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03T14:02:26.924+05:00  INFO 6024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-03T14:02:26.925+05:00  INFO 6024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-03T14:02:27.118+05:00 ERROR 6024 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "login": Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-06-03T14:02:27.123+05:00 ERROR 6024 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-06-03T14:03:29.329+05:00  INFO 6024 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:03:29.331+05:00  INFO 6024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-03T14:03:29.335+05:00  INFO 6024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-03T14:03:31.406+05:00  INFO 12616 --- [main] b.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 17.0.10 with PID 12616 (C:\Baglan\Java Spring\final_project\build\classes\java\main started by bagl0 in C:\Baglan\Java Spring\final_project)
+2024-06-03T14:03:31.407+05:00  INFO 12616 --- [main] b.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-03T14:03:31.896+05:00  INFO 12616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03T14:03:31.948+05:00  INFO 12616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2024-06-03T14:03:32.380+05:00  INFO 12616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-03T14:03:32.390+05:00  INFO 12616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-03T14:03:32.390+05:00  INFO 12616 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03T14:03:32.435+05:00  INFO 12616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-03T14:03:32.435+05:00  INFO 12616 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 998 ms
+2024-06-03T14:03:32.542+05:00  INFO 12616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-03T14:03:32.668+05:00  INFO 12616 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@640d604
+2024-06-03T14:03:32.668+05:00  INFO 12616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-03T14:03:32.768+05:00  INFO 12616 --- [main] liquibase.database                       : Set default schema name to rest
+2024-06-03T14:03:33.074+05:00  INFO 12616 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:03:33.093+05:00  INFO 12616 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-06-03T14:03:33.094+05:00  INFO 12616 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:03:33.100+05:00  INFO 12616 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-06-03T14:03:33.101+05:00  INFO 12616 --- [main] liquibase.util                           : Run:                          0
+2024-06-03T14:03:33.101+05:00  INFO 12616 --- [main] liquibase.util                           : Previously run:               2
+2024-06-03T14:03:33.101+05:00  INFO 12616 --- [main] liquibase.util                           : Filtered out:                 0
+2024-06-03T14:03:33.101+05:00  INFO 12616 --- [main] liquibase.util                           : -------------------------------
+2024-06-03T14:03:33.101+05:00  INFO 12616 --- [main] liquibase.util                           : Total change sets:            2
+2024-06-03T14:03:33.101+05:00  INFO 12616 --- [main] liquibase.util                           : Update summary generated
+2024-06-03T14:03:33.117+05:00  INFO 12616 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-06-03T14:03:33.118+05:00  INFO 12616 --- [main] liquibase.command                        : Command execution complete
+2024-06-03T14:03:33.172+05:00  INFO 12616 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-03T14:03:33.224+05:00  INFO 12616 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-03T14:03:33.249+05:00  INFO 12616 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-03T14:03:33.504+05:00  INFO 12616 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-03T14:03:34.208+05:00  INFO 12616 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-03T14:03:34.210+05:00  INFO 12616 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:03:34.442+05:00  INFO 12616 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-03T14:03:34.722+05:00  WARN 12616 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-03T14:03:34.744+05:00  INFO 12616 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-03T14:03:34.972+05:00  INFO 12616 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e1e9a10, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@248e31a1, org.springframework.security.web.context.SecurityContextHolderFilter@1c0455c4, org.springframework.security.web.header.HeaderWriterFilter@5813046e, org.springframework.web.filter.CorsFilter@2eb6a77f, org.springframework.security.web.authentication.logout.LogoutFilter@4cde5d66, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64f3f849, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4467c026, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bd5cb99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b1d2d7b, org.springframework.security.web.access.ExceptionTranslationFilter@17f43f4a]
+2024-06-03T14:03:35.181+05:00  INFO 12616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-03T14:03:35.189+05:00  INFO 12616 --- [main] b.final_project.FinalProjectApplication  : Started FinalProjectApplication in 4.1 seconds (process running for 4.497)
+2024-06-03T14:13:12.390+05:00  INFO 12616 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:13:12.394+05:00  INFO 12616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-03T14:13:12.396+05:00  INFO 12616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-03T14:13:14.282+05:00  INFO 17068 --- [main] b.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 17.0.10 with PID 17068 (C:\Baglan\Java Spring\final_project\build\classes\java\main started by bagl0 in C:\Baglan\Java Spring\final_project)
+2024-06-03T14:13:14.284+05:00  INFO 17068 --- [main] b.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-03T14:13:14.747+05:00  INFO 17068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03T14:13:14.796+05:00  INFO 17068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2024-06-03T14:13:15.192+05:00  INFO 17068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-03T14:13:15.200+05:00  INFO 17068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-03T14:13:15.200+05:00  INFO 17068 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03T14:13:15.250+05:00  INFO 17068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-03T14:13:15.250+05:00  INFO 17068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 937 ms
+2024-06-03T14:13:15.351+05:00  INFO 17068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-03T14:13:15.468+05:00  INFO 17068 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@640d604
+2024-06-03T14:13:15.469+05:00  INFO 17068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-03T14:13:15.566+05:00  INFO 17068 --- [main] liquibase.database                       : Set default schema name to rest
+2024-06-03T14:13:15.850+05:00  INFO 17068 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:13:15.867+05:00  INFO 17068 --- [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-06-03T14:13:15.868+05:00  INFO 17068 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:13:15.873+05:00  INFO 17068 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-06-03T14:13:15.873+05:00  INFO 17068 --- [main] liquibase.util                           : Run:                          0
+2024-06-03T14:13:15.873+05:00  INFO 17068 --- [main] liquibase.util                           : Previously run:               2
+2024-06-03T14:13:15.873+05:00  INFO 17068 --- [main] liquibase.util                           : Filtered out:                 0
+2024-06-03T14:13:15.873+05:00  INFO 17068 --- [main] liquibase.util                           : -------------------------------
+2024-06-03T14:13:15.873+05:00  INFO 17068 --- [main] liquibase.util                           : Total change sets:            2
+2024-06-03T14:13:15.875+05:00  INFO 17068 --- [main] liquibase.util                           : Update summary generated
+2024-06-03T14:13:15.895+05:00  INFO 17068 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-06-03T14:13:15.897+05:00  INFO 17068 --- [main] liquibase.command                        : Command execution complete
+2024-06-03T14:13:15.952+05:00  INFO 17068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-03T14:13:16.001+05:00  INFO 17068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-03T14:13:16.026+05:00  INFO 17068 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-03T14:13:16.266+05:00  INFO 17068 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-03T14:13:16.962+05:00  INFO 17068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-03T14:13:16.964+05:00  INFO 17068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:13:17.194+05:00  INFO 17068 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-03T14:13:17.460+05:00  WARN 17068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-03T14:13:17.479+05:00  INFO 17068 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-03T14:13:17.692+05:00  INFO 17068 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e1e9a10, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@248e31a1, org.springframework.security.web.context.SecurityContextHolderFilter@1c0455c4, org.springframework.security.web.header.HeaderWriterFilter@5813046e, org.springframework.web.filter.CorsFilter@2eb6a77f, org.springframework.security.web.authentication.logout.LogoutFilter@4cde5d66, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64f3f849, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4467c026, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bd5cb99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b1d2d7b, org.springframework.security.web.access.ExceptionTranslationFilter@17f43f4a]
+2024-06-03T14:13:17.897+05:00  INFO 17068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-03T14:13:17.904+05:00  INFO 17068 --- [main] b.final_project.FinalProjectApplication  : Started FinalProjectApplication in 3.939 seconds (process running for 4.329)
+2024-06-03T14:14:09.531+05:00  INFO 17068 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:14:09.532+05:00  INFO 17068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-03T14:14:09.535+05:00  INFO 17068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-03T14:14:11.381+05:00  INFO 11476 --- [main] b.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 17.0.10 with PID 11476 (C:\Baglan\Java Spring\final_project\build\classes\java\main started by bagl0 in C:\Baglan\Java Spring\final_project)
+2024-06-03T14:14:11.383+05:00  INFO 11476 --- [main] b.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-03T14:14:11.850+05:00  INFO 11476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03T14:14:11.897+05:00  INFO 11476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2024-06-03T14:14:12.292+05:00  INFO 11476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-03T14:14:12.300+05:00  INFO 11476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-03T14:14:12.300+05:00  INFO 11476 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03T14:14:12.350+05:00  INFO 11476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-03T14:14:12.350+05:00  INFO 11476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 937 ms
+2024-06-03T14:14:12.450+05:00  INFO 11476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-03T14:14:12.568+05:00  INFO 11476 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b96de8d
+2024-06-03T14:14:12.569+05:00  INFO 11476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-03T14:14:12.665+05:00  INFO 11476 --- [main] liquibase.database                       : Set default schema name to rest
+2024-06-03T14:14:12.951+05:00  INFO 11476 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:14:12.984+05:00  INFO 11476 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-06-03T14:14:12.985+05:00  INFO 11476 --- [main] liquibase.command                        : Using deploymentId: 7406052984
+2024-06-03T14:14:12.986+05:00  INFO 11476 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:14:12.989+05:00  INFO 11476 --- [main] liquibase.ui                             : Running Changeset: db.changelog/changes/2024-06-03-14-04-00-create-table-roles.sql::1::b.imanbekov
+2024-06-03T14:14:13.010+05:00  INFO 11476 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-06-03T14:14:13.011+05:00  INFO 11476 --- [main] liquibase.changelog                      : ChangeSet db.changelog/changes/2024-06-03-14-04-00-create-table-roles.sql::1::b.imanbekov ran successfully in 22ms
+2024-06-03T14:14:13.018+05:00  INFO 11476 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-06-03T14:14:13.018+05:00  INFO 11476 --- [main] liquibase.util                           : Run:                          1
+2024-06-03T14:14:13.018+05:00  INFO 11476 --- [main] liquibase.util                           : Previously run:               2
+2024-06-03T14:14:13.019+05:00  INFO 11476 --- [main] liquibase.util                           : Filtered out:                 0
+2024-06-03T14:14:13.019+05:00  INFO 11476 --- [main] liquibase.util                           : -------------------------------
+2024-06-03T14:14:13.019+05:00  INFO 11476 --- [main] liquibase.util                           : Total change sets:            3
+2024-06-03T14:14:13.019+05:00  INFO 11476 --- [main] liquibase.util                           : Update summary generated
+2024-06-03T14:14:13.021+05:00  INFO 11476 --- [main] liquibase.command                        : Update command completed successfully.
+2024-06-03T14:14:13.021+05:00  INFO 11476 --- [main] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 1
+2024-06-03T14:14:13.023+05:00  INFO 11476 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-06-03T14:14:13.023+05:00  INFO 11476 --- [main] liquibase.command                        : Command execution complete
+2024-06-03T14:14:13.080+05:00  INFO 11476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-03T14:14:13.126+05:00  INFO 11476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-03T14:14:13.153+05:00  INFO 11476 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-03T14:14:13.391+05:00  INFO 11476 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-03T14:14:14.091+05:00  INFO 11476 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-03T14:14:14.093+05:00  INFO 11476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:14:14.325+05:00  INFO 11476 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-03T14:14:14.593+05:00  WARN 11476 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-03T14:14:14.612+05:00  INFO 11476 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-03T14:14:14.817+05:00  INFO 11476 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f48adcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6adee80f, org.springframework.security.web.context.SecurityContextHolderFilter@72117a6c, org.springframework.security.web.header.HeaderWriterFilter@510c6b9, org.springframework.web.filter.CorsFilter@180466a9, org.springframework.security.web.authentication.logout.LogoutFilter@281f2d6c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ef8de39, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e6d9c25, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13088030, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2670435, org.springframework.security.web.access.ExceptionTranslationFilter@75c8ba94]
+2024-06-03T14:14:15.017+05:00  INFO 11476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-03T14:14:15.024+05:00  INFO 11476 --- [main] b.final_project.FinalProjectApplication  : Started FinalProjectApplication in 3.972 seconds (process running for 4.362)
+2024-06-03T14:17:50.969+05:00  INFO 11476 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:17:50.971+05:00  INFO 11476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-03T14:17:50.975+05:00  INFO 11476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-03T14:17:52.809+05:00  INFO 4400 --- [main] b.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 17.0.10 with PID 4400 (C:\Baglan\Java Spring\final_project\build\classes\java\main started by bagl0 in C:\Baglan\Java Spring\final_project)
+2024-06-03T14:17:52.812+05:00  INFO 4400 --- [main] b.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-03T14:17:53.297+05:00  INFO 4400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03T14:17:53.347+05:00  INFO 4400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2024-06-03T14:17:53.768+05:00  INFO 4400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-03T14:17:53.775+05:00  INFO 4400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-03T14:17:53.775+05:00  INFO 4400 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03T14:17:53.825+05:00  INFO 4400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-03T14:17:53.825+05:00  INFO 4400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2024-06-03T14:17:53.945+05:00  INFO 4400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-03T14:17:54.068+05:00  INFO 4400 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ddd1c51
+2024-06-03T14:17:54.069+05:00  INFO 4400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-03T14:17:54.168+05:00  INFO 4400 --- [main] liquibase.database                       : Set default schema name to rest
+2024-06-03T14:17:54.459+05:00  INFO 4400 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:17:54.495+05:00  INFO 4400 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-06-03T14:17:54.496+05:00  INFO 4400 --- [main] liquibase.command                        : Using deploymentId: 7406274496
+2024-06-03T14:17:54.497+05:00  INFO 4400 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:17:54.501+05:00  INFO 4400 --- [main] liquibase.ui                             : Running Changeset: db.changelog/changes/2024-06-03-14-14-00-create-table-users.sql::raw::includeAll
+2024-06-03T14:17:54.527+05:00  INFO 4400 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-06-03T14:17:54.528+05:00  INFO 4400 --- [main] liquibase.changelog                      : ChangeSet db.changelog/changes/2024-06-03-14-14-00-create-table-users.sql::raw::includeAll ran successfully in 27ms
+2024-06-03T14:17:54.535+05:00  INFO 4400 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-06-03T14:17:54.535+05:00  INFO 4400 --- [main] liquibase.util                           : Run:                          1
+2024-06-03T14:17:54.536+05:00  INFO 4400 --- [main] liquibase.util                           : Previously run:               3
+2024-06-03T14:17:54.536+05:00  INFO 4400 --- [main] liquibase.util                           : Filtered out:                 0
+2024-06-03T14:17:54.536+05:00  INFO 4400 --- [main] liquibase.util                           : -------------------------------
+2024-06-03T14:17:54.536+05:00  INFO 4400 --- [main] liquibase.util                           : Total change sets:            4
+2024-06-03T14:17:54.536+05:00  INFO 4400 --- [main] liquibase.util                           : Update summary generated
+2024-06-03T14:17:54.538+05:00  INFO 4400 --- [main] liquibase.command                        : Update command completed successfully.
+2024-06-03T14:17:54.538+05:00  INFO 4400 --- [main] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 1
+2024-06-03T14:17:54.539+05:00  INFO 4400 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-06-03T14:17:54.540+05:00  INFO 4400 --- [main] liquibase.command                        : Command execution complete
+2024-06-03T14:17:54.598+05:00  INFO 4400 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-03T14:17:54.653+05:00  INFO 4400 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-03T14:17:54.682+05:00  INFO 4400 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-03T14:17:54.914+05:00  INFO 4400 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-03T14:17:55.640+05:00  INFO 4400 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-03T14:17:55.642+05:00  INFO 4400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:17:55.872+05:00  INFO 4400 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-03T14:17:56.144+05:00  WARN 4400 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-03T14:17:56.163+05:00  INFO 4400 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-03T14:17:56.373+05:00  INFO 4400 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ef8de39, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@370e5bb9, org.springframework.security.web.context.SecurityContextHolderFilter@746f5752, org.springframework.security.web.header.HeaderWriterFilter@58453967, org.springframework.web.filter.CorsFilter@46769bd6, org.springframework.security.web.authentication.logout.LogoutFilter@8e654f7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c5157c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c666872, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71b75f99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5739b804, org.springframework.security.web.access.ExceptionTranslationFilter@c62d08a]
+2024-06-03T14:17:56.579+05:00  INFO 4400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-03T14:17:56.587+05:00  INFO 4400 --- [main] b.final_project.FinalProjectApplication  : Started FinalProjectApplication in 4.099 seconds (process running for 4.499)
+2024-06-03T14:18:26.474+05:00  INFO 4400 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:18:26.476+05:00  INFO 4400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-03T14:18:26.478+05:00  INFO 4400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-03T14:18:28.317+05:00  INFO 23348 --- [main] b.final_project.FinalProjectApplication  : Starting FinalProjectApplication using Java 17.0.10 with PID 23348 (C:\Baglan\Java Spring\final_project\build\classes\java\main started by bagl0 in C:\Baglan\Java Spring\final_project)
+2024-06-03T14:18:28.319+05:00  INFO 23348 --- [main] b.final_project.FinalProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-06-03T14:18:28.786+05:00  INFO 23348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03T14:18:28.834+05:00  INFO 23348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2024-06-03T14:18:29.232+05:00  INFO 23348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-03T14:18:29.240+05:00  INFO 23348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-03T14:18:29.240+05:00  INFO 23348 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03T14:18:29.282+05:00  INFO 23348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-03T14:18:29.282+05:00  INFO 23348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 935 ms
+2024-06-03T14:18:29.382+05:00  INFO 23348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-03T14:18:29.504+05:00  INFO 23348 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@752b69e3
+2024-06-03T14:18:29.505+05:00  INFO 23348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-03T14:18:29.603+05:00  INFO 23348 --- [main] liquibase.database                       : Set default schema name to rest
+2024-06-03T14:18:29.891+05:00  INFO 23348 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:18:29.931+05:00  INFO 23348 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-06-03T14:18:29.932+05:00  INFO 23348 --- [main] liquibase.command                        : Using deploymentId: 7406309932
+2024-06-03T14:18:29.933+05:00  INFO 23348 --- [main] liquibase.changelog                      : Reading from rest.databasechangelog
+2024-06-03T14:18:29.937+05:00  INFO 23348 --- [main] liquibase.ui                             : Running Changeset: db.changelog/changes/2024-06-03-14-16-00-create-table-user-roles.sql::raw::includeAll
+2024-06-03T14:18:29.949+05:00  INFO 23348 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-06-03T14:18:29.950+05:00  INFO 23348 --- [main] liquibase.changelog                      : ChangeSet db.changelog/changes/2024-06-03-14-16-00-create-table-user-roles.sql::raw::includeAll ran successfully in 13ms
+2024-06-03T14:18:29.956+05:00  INFO 23348 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-06-03T14:18:29.958+05:00  INFO 23348 --- [main] liquibase.util                           : Run:                          1
+2024-06-03T14:18:29.958+05:00  INFO 23348 --- [main] liquibase.util                           : Previously run:               4
+2024-06-03T14:18:29.958+05:00  INFO 23348 --- [main] liquibase.util                           : Filtered out:                 0
+2024-06-03T14:18:29.958+05:00  INFO 23348 --- [main] liquibase.util                           : -------------------------------
+2024-06-03T14:18:29.958+05:00  INFO 23348 --- [main] liquibase.util                           : Total change sets:            5
+2024-06-03T14:18:29.958+05:00  INFO 23348 --- [main] liquibase.util                           : Update summary generated
+2024-06-03T14:18:29.959+05:00  INFO 23348 --- [main] liquibase.command                        : Update command completed successfully.
+2024-06-03T14:18:29.959+05:00  INFO 23348 --- [main] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 1
+2024-06-03T14:18:29.961+05:00  INFO 23348 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-06-03T14:18:29.962+05:00  INFO 23348 --- [main] liquibase.command                        : Command execution complete
+2024-06-03T14:18:30.021+05:00  INFO 23348 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-03T14:18:30.063+05:00  INFO 23348 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-03T14:18:30.088+05:00  INFO 23348 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-03T14:18:30.322+05:00  INFO 23348 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-03T14:18:31.035+05:00  INFO 23348 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-03T14:18:31.037+05:00  INFO 23348 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03T14:18:31.265+05:00  INFO 23348 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-03T14:18:31.524+05:00  WARN 23348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-03T14:18:31.542+05:00  INFO 23348 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-06-03T14:18:31.748+05:00  INFO 23348 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@616e7884, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ee4aad3, org.springframework.security.web.context.SecurityContextHolderFilter@6990f6af, org.springframework.security.web.header.HeaderWriterFilter@67253518, org.springframework.web.filter.CorsFilter@51ce8293, org.springframework.security.web.authentication.logout.LogoutFilter@74de1e9d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7306f65f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@200ef05b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cb9295f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23043ba, org.springframework.security.web.access.ExceptionTranslationFilter@7e38f55]
+2024-06-03T14:18:31.955+05:00  INFO 23348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-03T14:18:31.963+05:00  INFO 23348 --- [main] b.final_project.FinalProjectApplication  : Started FinalProjectApplication in 3.966 seconds (process running for 4.351)
